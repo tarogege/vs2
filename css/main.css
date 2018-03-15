@@ -9135,7 +9135,11 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.mynavs:before,
+.mynavs:after,
+.symbolnavs:before,
+.symbolnavs:after {
   content: " ";
   display: table;
 }
@@ -9154,7 +9158,9 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after {
+.modal-footer:after,
+.mynavs:after,
+.symbolnavs:after {
   clear: both;
 }
 .center-block {
@@ -9635,23 +9641,30 @@ button.close {
 }
 .left-nav .left-nav-ul a:hover {
   color: black;
+  background-image: url("img/symbolleft.png");
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+  padding-left: 14px;
 }
 .third-ones {
   margin-top: 30px;
-}
-.third-ones ul {
-  list-style-type: circle;
 }
 .third-ones ul li {
   margin-top: 3px;
 }
 .third-ones ul a {
+  vertical-align: middle;
   text-align: left;
   font-size: 11px;
 }
 .third-ones ul a:hover {
   color: black;
   text-decoration: none;
+}
+.third-ones ul img {
+  width: 18px;
+  height: 20px;
+  margin-right: 10px;
 }
 .mynavs {
   margin-bottom: 0;
@@ -9668,5 +9681,22 @@ button.close {
 }
 .mynavs > li > a:hover,
 .mynavs > li > a:focus {
+  text-decoration: none;
+}
+.symbolnavs {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.symbolnavs > li {
+  position: relative;
+  display: block;
+}
+.symbolnavs > li > a {
+  position: relative;
+  display: block;
+  padding: 6px 8px;
+}
+.symbolnavs > li > a:hover,
+.symbolnavs > li > a:focus {
   text-decoration: none;
 }
