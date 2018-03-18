@@ -4953,7 +4953,7 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -9135,11 +9135,7 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after,
-.mynavs:before,
-.mynavs:after,
-.symbolnavs:before,
-.symbolnavs:after {
+.modal-footer:after {
   content: " ";
   display: table;
 }
@@ -9158,9 +9154,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after,
-.mynavs:after,
-.symbolnavs:after {
+.modal-footer:after {
   clear: both;
 }
 .center-block {
@@ -9596,6 +9590,9 @@ button.close {
   font-weight: 350;
   font-size: 16px;
 }
+.btn .btn-link {
+  float: right;
+}
 .col-sm-3 img {
   width: 79px;
   height: 60px;
@@ -9641,30 +9638,23 @@ button.close {
 }
 .left-nav .left-nav-ul a:hover {
   color: black;
-  background-image: url("img/symbolleft.png");
-  background-repeat: no-repeat;
-  background-position: 0px 5px;
-  padding-left: 14px;
 }
 .third-ones {
   margin-top: 30px;
+}
+.third-ones ul {
+  list-style-type: circle;
 }
 .third-ones ul li {
   margin-top: 3px;
 }
 .third-ones ul a {
-  vertical-align: middle;
   text-align: left;
   font-size: 11px;
 }
 .third-ones ul a:hover {
   color: black;
   text-decoration: none;
-}
-.third-ones ul img {
-  width: 18px;
-  height: 20px;
-  margin-right: 10px;
 }
 .mynavs {
   margin-bottom: 0;
@@ -9683,20 +9673,46 @@ button.close {
 .mynavs > li > a:focus {
   text-decoration: none;
 }
-.symbolnavs {
-  margin-bottom: 0;
-  padding-left: 0;
+.response-img-list {
+  text-align: center;
+  margin-top: 38px;
 }
-.symbolnavs > li {
-  position: relative;
-  display: block;
+.response-img-list a {
+  color: black;
+  font-size: 16px;
+  font-weight: 360;
 }
-.symbolnavs > li > a {
-  position: relative;
-  display: block;
-  padding: 6px 8px;
-}
-.symbolnavs > li > a:hover,
-.symbolnavs > li > a:focus {
+.response-img-list a:hover {
   text-decoration: none;
+}
+.body-head {
+  font-weight: 380;
+  margin-bottom: 20px;
+}
+.body-content {
+  font-weight: 390;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.video-table span {
+  color: black;
+}
+.video-table img {
+  width: 170px;
+  height: 85px;
+  margin-top: 14px;
+}
+.video-table .my-col-1 {
+  float: left;
+}
+.video-table .my-col-2 {
+  float: left;
+  width: 60%;
+  margin-left: 10px;
+  margin-top: -6px;
+}
+.video-table .my-col-2 h2 {
+  font-size: 18px;
+  font-weight: 380;
+  color: #1f69b6;
 }
