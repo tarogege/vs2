@@ -6963,6 +6963,26 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-left: -15px;
   }
 }
+.navbar-brand-inverse {
+  float: left;
+  padding-top: 12%;
+  font-size: 12px;
+  line-height: 20px;
+  height: 50px;
+}
+.navbar-brand-inverse:hover,
+.navbar-brand-inverse:focus {
+  text-decoration: none;
+}
+.navbar-brand-inverse > img {
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  .navbar > .container .navbar-brand-inverse,
+  .navbar > .container-fluid .navbar-brand-inverse {
+    margin-left: -15px;
+  }
+}
 .navbar-toggle {
   position: relative;
   float: right;
@@ -7031,6 +7051,49 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.mynavbar-nav {
+  margin: 7.5px -15px;
+}
+.mynavbar-nav > li > a {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 20px;
+}
+@media (max-width: 991px) {
+  .mynavbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  .mynavbar-nav .open .dropdown-menu > li > a,
+  .mynavbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  .mynavbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px;
+  }
+  .mynavbar-nav .open .dropdown-menu > li > a:hover,
+  .mynavbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 992px) {
+  .mynavbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .mynavbar-nav > li {
+    float: left;
+  }
+  .mynavbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -7264,23 +7327,26 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: #222222;
   border-color: #080808;
 }
-.navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand-inverse {
+  color: white;
 }
 .navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
+.navbar-inverse .navbar-brand-inverse:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand-inverse:focus {
+  color: white;
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
   color: #9d9d9d;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #9d9d9d;
+  color: white;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: white;
   background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .active > a,
@@ -8897,7 +8963,6 @@ button.close {
 }
 .carousel-inner {
   position: relative;
-  overflow: hidden;
   width: 100%;
 }
 .carousel-inner > .item {
@@ -9715,4 +9780,68 @@ button.close {
   font-size: 18px;
   font-weight: 380;
   color: #1f69b6;
+}
+body {
+  overflow-x: scroll;
+}
+.first a {
+  font-size: 12px;
+}
+#codenav {
+  background-color: #d8004b;
+  color: white;
+}
+#codenav a:hover {
+  background-color: #bf0042;
+  color: white;
+}
+.exnav li a {
+  color: black;
+  padding: 10px,50px;
+}
+.toptitle h2 {
+  font-size: 42px;
+  font-weight: 280;
+  text-align: center;
+}
+.form .input[type=text] {
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+}
+.my-col {
+  width: 168px;
+  margin-left: 27px;
+  float: left;
+}
+.container h4 {
+  margin-top: 30px;
+}
+.container .my-col a {
+  color: black;
+  box-shadow: 3px 3px 5px #afafaf;
+}
+.container .my-col a:hover {
+  text-decoration: none;
+}
+.container h5 {
+  text-align: center;
+}
+.container .person {
+  font-size: 12px;
+  color: #555555;
+}
+.container .person .person-right {
+  float: right;
+}
+.container .price {
+  margin-top: -12px;
+  color: green;
+  font-size: 14px;
+  font-weight: 420;
+  float: right;
+}
+.mycarousel-control {
+  margin-left: -25px;
+  margin-right: -25px;
 }

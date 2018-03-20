@@ -1,0 +1,73 @@
+@mynav-active:rgb(216, 0, 75);
+body{
+	overflow-x: scroll;
+}
+.first{
+	a{
+		font-size: 12px;
+	}
+}
+#codenav{
+	background-color: rgb(216,0,75);
+	color: white;
+	a:hover{
+		background-color: darken(@mynav-active,5%);
+		color: white;
+	}
+}
+.exnav {
+	li a{
+	color: black;
+	padding:10px,50px;
+}
+}
+.toptitle{
+	h2{
+		font-size: 42px;
+		font-weight: 280;
+		text-align: center;
+	}
+}
+.form .input[type=text]{
+	display: inline-block;;
+	width: 30px;
+	height: 50px;
+}
+.my-col{
+	width: 168px;
+	margin-left: 27px;
+	float: left;
+}
+.container{
+	h4{
+		margin-top:30px;
+	}
+	.my-col a{
+		color: black;
+		box-shadow: 3px 3px 5px lighten(@gray,35%);
+	&:hover{
+		text-decoration: none;
+	}}
+	h5{
+		text-align: center;
+	}
+	.person{
+		font-size: 12px;
+		color: @gray;
+		.person-right{
+			float: right;
+		}
+	}
+	.price{
+		margin-top: -12px;
+		color: green;
+		font-size: 14px;
+		font-weight: 420;
+		float: right;
+	}
+}
+
+.mycarousel-control{
+	margin-left: (@carousel-control-font-size / -0.8);
+	margin-right: (@carousel-control-font-size / -0.8);
+}

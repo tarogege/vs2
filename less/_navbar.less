@@ -186,6 +186,33 @@
   }
 }
 
+//mynavbar-inverse-brand
+.navbar-brand-inverse {
+  float: left;
+  //padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  //padding:22px 30px 0 15px;
+  padding-top: 12%;
+  //font-size: @font-size-large;
+  font-size:12px;
+  line-height: @line-height-computed;
+  height: @navbar-height;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: inline-block;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -@navbar-padding-horizontal;
+    }
+  }
+}
 
 // Navbar toggle
 //
@@ -279,6 +306,54 @@
   }
 }
 
+//mynavbar-nav
+.mynavbar-nav {
+  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+
+  > li > a {
+    padding-top:    18px;
+    padding-bottom: 18px;
+    line-height: @line-height-computed;
+  }
+
+  @media (max-width: @grid-float-breakpoint-max) {
+    // Dropdowns get custom display when collapsed
+    .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+      > li > a,
+      .dropdown-header {
+        padding: 5px 15px 5px 25px;
+      }
+      > li > a {
+        line-height: @line-height-computed;
+        &:hover,
+        &:focus {
+          background-image: none;
+        }
+      }
+    }
+  }
+
+  // Uncollapse the nav
+  @media (min-width: @grid-float-breakpoint) {
+    float: left;
+    margin: 0;
+
+    > li {
+      float: left;
+      > a {
+        padding-top:    @navbar-padding-vertical;
+        padding-bottom: @navbar-padding-vertical;
+      }
+    }
+  }
+}
 
 // Navbar form
 //
@@ -532,11 +607,13 @@
   background-color: @navbar-inverse-bg;
   border-color: @navbar-inverse-border;
 
-  .navbar-brand {
-    color: @navbar-inverse-brand-color;
+  .navbar-brand,.navbar-brand-inverse {
+    //color: @navbar-inverse-brand-color;
+    color: white;
     &:hover,
     &:focus {
-      color: @navbar-inverse-brand-hover-color;
+      //color: @navbar-inverse-brand-hover-color;
+      color: white;
       background-color: @navbar-inverse-brand-hover-bg;
     }
   }
@@ -547,11 +624,13 @@
 
   .navbar-nav {
     > li > a {
-      color: @navbar-inverse-link-color;
+      //color: @navbar-inverse-link-color;
+      color: white;
 
       &:hover,
       &:focus {
-        color: @navbar-inverse-link-hover-color;
+        //color: @navbar-inverse-link-hover-color;
+        color: white;
         background-color: @navbar-inverse-link-hover-bg;
       }
     }
